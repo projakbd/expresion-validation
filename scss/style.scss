@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+sup{
+    color:red;
+}
+
+body    {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E6E6E6;
+    background-attachment: fixed;
+    font-size: 30px;
+    color:#707070;
+    overflow: hidden;
+
+}
+
+
+.active{
+    border:1px solid red;
+}
+
+.form-container {
+    display: block;
+    width: 544px;
+    height:600px;
+    margin:150px auto;
+    background-color: rgba(#FFFFFF, 50%);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(#000000, 16%);
+    overflow: hidden;
+
+    .form-head {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+        padding: 10px;
+    }
+
+    .form-control {
+        width: 80%;
+        display: block;
+        margin: 2% auto;
+
+        .input-field{
+            padding:5px;
+            position: relative;
+    
+            label{
+                font-size: .6em;
+                font-weight: 400;
+                margin-right:10px;
+                line-height: 25px;
+            }
+
+            input[type=text]{
+                width: 70%;
+                float: right;
+                padding:10px;
+                border:1px solid #707070;
+                border-radius: 5px;
+                background: none;
+                outline: none;
+                font-size: .5em;
+            }
+
+            input[type=email]{
+                width: 70%;
+                float: right;
+                padding:10px;
+                border:1px solid #707070;
+                border-radius: 5px;
+                background: none;
+                outline: none;
+                font-size: .5em;
+            }
+
+            input[type=password]{
+                width: 70%;
+                float: right;
+                padding:10px;
+                border:1px solid #707070;
+                border-radius: 5px;
+                background: none;
+                outline: none;
+                font-size: .5em;
+            }
+
+            input:hover{
+                border:1px solid #000000;
+            }
+            input:focus {
+                border:1px solid #000000;
+            }        
+            
+            i{
+                visibility: hidden;
+                position: absolute;
+                top: 25%;
+                right: 3%;
+                font-size: .6em;
+            }
+            small{
+                display: block;
+                visibility: hidden;
+                padding-left: 30%;
+                font-size: .4em;
+                bottom: 0;
+                color:red;
+            }
+        }
+
+        
+
+        .gender{
+            display: block;
+            padding:5px;
+            position: relative;
+            padding-bottom: 15px;
+    
+            label{
+                font-size: .6em;
+                font-weight: 400;
+                margin-right:10px;
+                line-height: 25px;
+            }
+            .radio{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 10px;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 70%;
+                float:right;
+                font-size: .7em;
+                padding:5px 0;
+                // position: relative;
+
+                span{
+                    border: 1px solid #707070;
+                    border-radius: 5px;
+                    position: relative;
+
+                    .r-container{
+                        display: block;
+                        cursor: pointer;
+                        font-size: .7em;
+                        list-style: 10px;
+                        padding: 5px;
+                    }
+                    
+                    .r-container input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                      }
+                      
+                      .checkmark {
+                        position: absolute;
+                        top: 20%;
+                        right: 5px;
+                        height: 20px;
+                        width: 20px;
+                        background-color: none;
+                        border-radius: 50%;
+                      }
+                      
+                      .r-container input:checked ~ .checkmark {
+                        background-color: none;
+                      }
+                      
+                      .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                      }
+                      
+                      .r-container input:checked ~ .checkmark:after {
+                        display: block;
+                      }
+                      
+                      .r-container .checkmark:after {
+                          width: 16px;
+                          height: 16px;
+                          border:1px solid #FFFFFF;
+                          border-radius: 50%;
+                          background: #707070;
+                      }
+
+                }
+
+                span:hover{
+                    border:1px solid #000000;
+                }
+            }
+
+        }
+
+        .submit {
+            display: block;
+            margin: auto;
+            width: 150px;
+            height:40px;
+            margin-top: 10px;
+            font-size: .6em;
+            color: #FFFFFF;
+            font-weight: 400;
+            background:#707070;
+            border:none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all .2s linear;
+        }
+
+        .submit:hover {
+            background: none;
+            color:#707070;
+            border:1px solid #707070;
+        }
+    }
+    
+
+}
+
+.success{
+
+    .input{
+        border: 1px solid green !important;
+    }
+    .fa-check-circle{
+        visibility: visible !important;
+        color:green;
+    }
+}
+
+.error{
+    .input{
+        border: 1px solid red !important;
+    }
+    .fa-exclamation-circle{
+        visibility: visible !important;
+        color:red;
+    }
+    .err-msg{
+        visibility: visible !important;
+    }
+}

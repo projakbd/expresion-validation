@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <main>
+        <div class="form-container">
+            <h2 class="form-head">Registration Form</h2>
+            <form class="form-control">
+                <div class="input-field first-name">
+                    <label for="first-name">First Name <sup>*</sup></label>
+                    <input class="input" id="first-name" type="text" name="first-name"
+                        placeholder="Write your first name..." autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class="err-msg">Error message</small>
+                </div>
+
+                <div class="input-field last-name">
+                    <label for="last-name">Last Name</label>
+                    <input class="input" id="last-name" type="text" name="last-name"
+                        placeholder="Write your last name..." autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class="err-msg">Error message</small>
+                </div>
+
+                <div class=" gender">
+                    <label for="gender">Gender <sup>*</sup></label>
+                    <div class="radio">
+                        <span class="male">
+                            <label class="r-container">Male
+                                <input class="input" type="radio" id="male" name="gender" value="Male" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                        </span>
+                        <span class="female">
+                            <label class="r-container">Female
+                                <input class="input" type="radio" id="female" name="gender" value="Female">
+                                <span class="checkmark"></span>
+                            </label>
+                        </span>
+                        <span class="others">
+                            <label class="r-container">Others
+                                <input class="input" type="radio" id="others" name="gender" value="Others">
+                                <span class="checkmark"></span>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-field email">
+                    <label for="email">Email <sup>*</sup></label>
+                    <input class="input" id="email" type="email" name="email" placeholder="Enter you email address..."
+                        autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class="err-msg">Error message</small>
+                </div>
+
+                <div class="input-field phone">
+                    <label for="phone">Phone</label>
+                    <input class="input" id="phone" type="text" name="phone" placeholder="Phone number..."
+                        autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class="err-msg">Error message</small>
+                </div>
+
+                <div class="input-field password">
+                    <label for="password">Password <sup>*</sup></label>
+                    <input class="input" id="password" type="password" name="password"
+                        placeholder="Enter your password..." autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class="err-msg">Error message</small>
+                </div>
+
+                <div class="input-field confirm">
+                    <label for="confirm">Confirm <sup>*</sup></label>
+                    <input class="input" id="confirm" type="password" name="password"
+                        placeholder="Rewrite your password.." autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class="err-msg">Error message</small>
+                </div>
+
+                <input class="submit" id="submit" type="submit" value="SUBMIT">
+
+            </form>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js
+    "></script>
+    <script src="./assets/js/validation.js
+    "></script>
+</body>
+
+</html>
